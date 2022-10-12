@@ -1,11 +1,7 @@
 <?php 
 
 class Dijkstra{
-    private $distance;
-    private $predecessors;
-    private $queue_priority;
-    private $path;
-
+    
     function __construct(){
         $this->distance = [];
         $this->predecessors = [];
@@ -56,7 +52,6 @@ class Dijkstra{
                 }    
             }
         }
-        print_r($this->predecessors);
     }
 
     private function store_path($target){        
